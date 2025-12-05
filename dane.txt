@@ -85,3 +85,6 @@ https://chatgpt.com/share/e/6932bd0a-db18-8013-a57b-49a7ddafe2c9
 )
 ---------
 =ZŁĄCZ.TEKST(JEŻELI(E20:E115=E20;JEŻELI(G20:G115=H20;D20;"");"");" , ")
+
+-------
+analizuje dane w excel, w kolumnie E mam daty które są w różnych formatach, wygeneruj makro które unormuje te daty oraz przedstaw mi krok po krok jak je użyć
