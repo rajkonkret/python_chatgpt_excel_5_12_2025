@@ -37,3 +37,49 @@ T – Ton wypowiedzi:
 ------
 https://chatgpt.com/s/t_6932bc8e66388191960591d1ec5bb544
 https://chatgpt.com/share/e/6932bd0a-db18-8013-a57b-49a7ddafe2c9
+-------
+=JEŻELI.BŁĄD(
+  INDEKS($D$6:$D$100;
+    AGREGUJ(
+      15; 6;
+      (WIERSZ($D$6:$D$100)-WIERSZ($D$6)+1) /
+      (
+        (
+          SUMA.WARUNKÓW(
+            $G$6:$G$100;
+            $D$6:$D$100;$D$6:$D$100;
+            $E$6:$E$100;
+            INDEKS($E$6:$E$100;
+              AGREGUJ(
+                15;6;
+                (WIERSZ($E$6:$E$100)-WIERSZ($E$6)+1) /
+                (PODAJ.POZYCJĘ($E$6:$E$100;$E$6:$E$100;0)=WIERSZ($E$6:$E$100)-WIERSZ($E$6)+1);
+                WIERSZ(A1)
+              )
+            )
+          )
+          =
+          MAX(
+            SUMA.WARUNKÓW(
+              $G$6:$G$100;
+              $D$6:$D$100;$D$6:$D$100;
+              $E$6:$E$100;
+              INDEKS($E$6:$E$100;
+                AGREGUJ(
+                  15;6;
+                  (WIERSZ($E$6:$E$100)-WIERSZ($E$6)+1) /
+                  (PODAJ.POZYCJĘ($E$6:$E$100;$E$6:$E$100;0)=WIERSZ($E$6:$E$100)-WIERSZ($E$6)+1);
+                  WIERSZ(A1)
+                )
+              )
+            )
+          )
+        )
+        *
+        (PODAJ.POZYCJĘ($D$6:$D$100;$D$6:$D$100;0)=WIERSZ($D$6:$D$100)-WIERSZ($D$6)+1)
+      );
+      1
+    )
+  );
+""
+)
