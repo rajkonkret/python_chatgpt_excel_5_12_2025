@@ -1,1 +1,35 @@
+C – Kontekst:
+Pracuję z danymi w Excel i chcę wygenerować gotowy plik .xlsx zawierający poprawnie ustrukturyzowane dane. 
+Plik będzie używany do dalszej analizy oraz importu do systemów BI/ERP. 
+Chcę, aby AI wygenerowało kompletny i poprawny plik Excel zgodny z wymaganiami.
 
+T – Zadanie:
+Wygeneruj plik Excel (.xlsx) zgodnie z poniższą specyfikacją:
+• Konstrukcja arkuszy
+• Kolumny i ich typy
+• Reguły walidacji danych
+• Formatowanie tabel i nagłówków
+• Dane przykładowe (określona liczba rekordów)
+• Formuły jeśli wymagane
+
+P – Parametry:
+• Plik Excel musi być poprawnie otwierany w Excel 2016+ oraz w Google Sheets.
+• Nagłówki mają być w języku polskim.
+• Używaj spójnych typów danych.
+• Nie używaj merged cells (utrudniają analizy).
+• Tabela musi być w formie „tidy data”.
+• Jeśli używasz formuł — stosuj polskie wersje funkcji (np. SUMA, ŚREDNIA).
+• Jeśli w danych są daty — używaj formatu YYYY-MM-DD.
+• Jeśli generujesz wartości liczbowe — stosuj realistyczne zakresy.
+• Jeśli arkusz ma mieć wiele zakładek — każda powinna mieć unikalną nazwę i opis.
+
+F – Format odpowiedzi:
+1. Krótki opis co zawiera plik.
+2. Lista arkuszy i ich struktura.
+3. Tabela przykładowych danych (podgląd).
+4. Wygenerowany plik Excel (.xlsx) do pobrania.
+
+T – Ton wypowiedzi:
+• Profesjonalny, techniczny.
+• Jasne zasady i czytelne struktury.
+• Zero dygresji, tylko konkretne instrukcje.
